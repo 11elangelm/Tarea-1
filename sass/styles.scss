@@ -1,0 +1,38 @@
+$box-border-color: black;
+$box-border: 2px;
+$box-initial-color: skyblue;
+$box-qty: 7;
+$box-size: 40px;
+$box-step-color: 10;//14.2857142857142;
+$line-height: $box-size;
+$text-color: white;
+$left-initial: 450px;
+$bottom-initial: 250px;
+
+div{
+  border: $box-border solid $box-border-color;
+  height: $box-size;
+  position: absolute;
+  text-align: center;
+  width: $box-size;	
+  color: $text-color;
+  line-height: $line-height;
+}
+
+@for $i from 1 through ($box-qty){
+	.box-#{$i}{
+		right: $left-initial - $i*$box-size*5/8;
+		top: $bottom-initial - $i*$box-size*5/8;
+		@if $i == 4 {
+			z-index: 0;
+		} @else if $i == 3 or $i == 5{
+			z-index: 1;
+		} @else if $i == 2 or $i == 6{
+			z-index: 3;
+		} @else{
+			z-index: 2;
+		}
+		background-color: darken($box-initial-color,$box-step-color*$i);
+	}
+	
+}

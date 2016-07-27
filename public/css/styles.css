@@ -1,0 +1,50 @@
+div {
+  border: 2px solid black;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  width: 40px;
+  color: white;
+  line-height: 40px; }
+
+.box-1 {
+  right: 425px;
+  top: 225px;
+  z-index: 2;
+  background-color: #5bbce4; }
+
+.box-2 {
+  right: 400px;
+  top: 200px;
+  z-index: 3;
+  background-color: #30aadc; }
+
+.box-3 {
+  right: 375px;
+  top: 175px;
+  z-index: 1;
+  background-color: #1f8dba; }
+
+.box-4 {
+  right: 350px;
+  top: 150px;
+  z-index: 0;
+  background-color: #186c8e; }
+
+.box-5 {
+  right: 325px;
+  top: 125px;
+  z-index: 1;
+  background-color: #104b63; }
+
+.box-6 {
+  right: 300px;
+  top: 100px;
+  z-index: 3;
+  background-color: #092a37; }
+
+.box-7 {
+  right: 275px;
+  top: 75px;
+  z-index: 2;
+  background-color: #02080b; }
